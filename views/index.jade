@@ -1,0 +1,24 @@
+script(type='text/javascript')
+  var matchId;
+
+  if (window.location.hash.length > 0){
+    matchId = window.location.hash.slice(1)
+  }
+
+  var game;
+script(type='text/javascript')
+  var socket = io.connect('http://localhost/');
+  $(function(){
+
+    if (!matchId){
+    }
+
+    socket.on('match-id', function(data){
+      matchId= data.id
+    });
+
+    socket.on('match-id-'+matchId, function (data) {
+      console.log(data);
+    });
+    game = new Game(matchId, socket);
+  });

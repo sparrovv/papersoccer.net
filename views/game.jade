@@ -1,0 +1,45 @@
+script(type="text/javascript")
+  var game;
+  var socket = io.connect('/');
+
+  $(function(){
+    game = new Game(#{id}, socket);
+  });
+
+#board
+
+.wrapper
+  #scoreboard
+    span.p1 
+      span.player-name 
+      span.goals 
+    span : 
+    span.p2 
+      span.goals 
+      span.player-name 
+
+  #attack
+  #p1
+    span.title 
+    span.current-move
+
+  #canvas
+
+
+  #p2
+    span.title 
+    span.current-move
+
+  ul#game-menu
+    li
+      span#reload reload
+
+  img(src="/public/images/goal-blue.png", class="goal p1")
+  img(src="/public/images/goal-orange.png", class="goal p2")
+
+.tip
+  | Invite another user to the game.
+  | Just copy URL, and send it to someone to start.
+
+#user-console 
+

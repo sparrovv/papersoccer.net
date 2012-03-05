@@ -1,0 +1,212 @@
+body{
+  font-family:Helvetica,Arial,sans-serif;
+}
+.players{
+  float:right
+}
+
+.players{
+  display:block;
+}
+
+path{
+  stroke-width: 2px;
+}
+
+.title{
+  text-transform: uppercase;
+}
+
+#p1 .title{
+  position: absolute;
+  top: 55px;
+  left: 35px;
+}
+
+#p1 .current-move{
+  position: absolute;
+  top: 55px;
+  right: 45px;
+}
+
+#p2 .title{
+  position: absolute;
+  top: 406px;
+  left: 213px;
+}
+
+#p2 .current-move{
+  position: absolute;
+  top: 406px;
+  left: 35px;
+}
+
+.wrapper{
+  height: 480px;
+  margin: auto;
+  position: relative;
+  width: 320px;
+  background: url('images/bg.jpg') no-repeat;
+}
+
+#canvas{
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.content{
+  height: 480px;
+  margin: auto;
+  position: relative;
+  width: 320px;
+  text-align:center;
+}
+
+ul{
+  list-style-type:none;
+  padding:0;
+}
+li{
+  padding:20px 10px;
+}
+#game-menu{
+  position:absolute;
+  top: 410px;
+  left: 119px;
+}
+
+#game-menu li{
+  padding:0px 10px;
+  font-size:11px;
+  display:inline;
+}
+#game-menu li span{
+  cursor:pointer;
+  font-weight:bold;
+}
+
+#new-game{
+  font-size:24px;
+}
+
+#attack{
+  position:absolute;
+}
+
+#scoreboard{
+  height:35px;
+  position:relative;
+  text-align:center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+#scoreboard .goals{
+  padding: 0 10px;
+}
+
+#scoreboard span{
+}
+
+button, .button {
+  color: #fff;
+  cursor:pointer;
+  text-decoration:none;
+  background:#347386;
+
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgb(60,136,157)),
+    color-stop(1, rgb(52,115,134))
+  );
+  background-image: -webkit-linear-gradient(
+    center top,
+    rgb(60,136,157) 0%,
+    rgb(52,115,134) 100%
+  );
+  background-image: -moz-linear-gradient(
+    center top,
+    rgb(60,136,157) 0%,
+    rgb(52,115,134) 100%
+  );
+  background-image: -o-linear-gradient(
+    center top,
+    rgb(60,136,157) 0%,
+    rgb(52,115,134) 100%
+  );
+
+  /* Temporary shadow without inset */
+  -moz-box-shadow:0 1px 0 rgba(0,0,0,.5), 0 -1px 0 #87c1d1;
+  -webkit-box-shadow:0 1px 0 rgba(0,0,0,.5), 0 -1px 0 #87c1d1;
+  -o-box-shadow:0 1px 0 rgba(0,0,0,.5), 0 -1px 0 #87c1d1;
+  box-shadow:0 1px 0 rgba(0,0,0,.5), 0 -1px 0 #87c1d1;
+
+  border:0;
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
+  -o-border-radius:30px;
+  border-radius:30px;
+
+  color:#fff;
+  font-size:24px;
+  -moz-text-shadow:0 1px 0 rgba(0,0,0,.5);
+  -webkit-text-shadow:0, 1px 0 rgba(0,0,0,.5);
+  -o-text-shadow:0 1px 0 rgba(0,0,0,.5);
+  text-shadow:0 1px 0 rgba(0,0,0,.5);
+
+  padding:0.5em 1em;
+}
+
+button:active, .button:active {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgb(52,115,134)),
+    color-stop(1, rgb(60,136,157))
+  );
+
+  background-image: -webkit-linear-gradient(
+    center top,
+    rgb(52,115,134) 0,
+    rgb(60,136,157) 100%
+ );
+  background-image: -moz-linear-gradient(
+    center top,
+    rgb(52,115,134) 0,
+    rgb(60,136,157) 100%
+ );
+
+  background-image: -o-linear-gradient(
+    center top,
+    rgb(52,115,134) 0,
+    rgb(60,136,157) 100%
+ );
+
+  /* Temporary shadow without inset */
+  -moz-box-shadow:0 1px 0 #50a4bc, 0 -1px 0 rgba(0,0,0,.5);
+  -webkit-box-shadow:0 1px 0 #50a4bc, 0 -1px 0 rgba(0,0,0,.5);
+  -o-box-shadow:0 1px 0 #50a4bc, 0 -1px 0 rgba(0,0,0,.5);
+  box-shadow:0 1px 0 #50a4bc, 0 -1px 0 rgba(0,0,0,.5);
+}
+
+a.button:hover {
+  color:#000;
+}
+
+img.goal{
+  display:none;
+  position:absolute;
+  top: 440px;
+  left: 35px;
+}
+.tip{
+  padding: 10px 0;
+  text-align:center;
+  color: #00529B;
+}
+
+h1 span{
+  font-size: 12px;
+}

@@ -1,0 +1,18 @@
+!!! 5
+html(lang="en")
+  head
+    link(rel='stylesheet',type='text/css',href='/public/styles.css')
+
+    script(type="text/javascript", src="/public/jquery.min.js")
+    script(type="text/javascript", src="/public/raphael-min.js")
+    script(type="text/javascript", src="/lib/js/cell.js")
+    script(type="text/javascript", src="/lib/js/field.js")
+    script(type="text/javascript", src="/lib/js/game.js")
+    script(type='text/javascript', src="/socket.io/socket.io.js")
+
+  body
+    - each message in flashMessages
+      div.error
+        #{message}
+
+    body!= body
